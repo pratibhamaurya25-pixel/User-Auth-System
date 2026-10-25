@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Dashboard | AuthSystem</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <div class="card dashboard">
+      <div class="logo">🔐</div>
+
+      <h1>Welcome to your dashboard</h1>
+
+    
+<p id="status">Loading your details...</p>
+
+<div>
+  <p>
+    <strong>Email:</strong>
+    <span id="email">Loading...</span>
+  </p>
+
+  <p>
+    <strong>Account status:</strong>
+    <span id="accountStatus">Checking...</span>
+  </p>
+
+  <p>
+    <strong>Login status:</strong>
+    <span id="loginStatus">Checking...</span>
+  </p>
+</div>
+
+
+      <button type="button" id="logoutBtn" class="btn">
+        Logout
+      </button>
+    </div>
+  </div>
+</body>
+</html>

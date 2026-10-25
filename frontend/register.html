@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register | AuthSystem</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <h1>Create Account</h1>
+      <p>Enter your details to register.</p>
+
+      <form id="registerForm">
+        <label for="registerEmail">Email</label>
+        <input
+          type="email"
+          id="registerEmail"
+          name="email"
+          placeholder="Enter your email"
+          required
+        >
+
+        <label for="registerPassword">Password</label>
+        <input
+          type="password"
+          id="registerPassword"
+          name="password"
+          placeholder="Enter password (minimum 8 characters)"
+          minlength="8"
+          required
+        >
+
+        <button type="submit" id="registerButton" class="btn">
+          Register
+        </button>
+
+        <p id="registerMessage" class="message" role="status"></p>
+      </form>
+
+      <p class="bottom-text">
+        Already have an account?
+        <a href="login.html">Login here</a>
+      </p>
+
+      <a href="index.html" class="home-link">← Back to Home</a>
+    </div>
+  </div>
+</body>
+</html>
